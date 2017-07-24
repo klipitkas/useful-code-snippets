@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^OLDDOMAIN\.com$ [NC]
+RewriteRule ^(.*)$ http://NEWDOMAIN.com [R=301,L]
